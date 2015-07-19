@@ -1,37 +1,51 @@
 Add file to the project:
+	
+	Introduce yourself to Git
+
+		git config --global user.name ""
+		git config --global user.email ""
+
 	Open up the terminal and change directory until you're inside the		folder, where your "code" are stored.
-	cd folder
+
+		cd folder
 	
 	Next initialize Git so you can start using Git commands inside the folder. The folder is now a Git repository.
-	git init
+
+		git init
 
 	Make sure this is where you stored your code.
-	git status
+	
+		git status
 
 	Add them to your local Git repository so they'll be tracked by Git.
-	git add yourfile.php
+	
+		git add yourfile.php
 
 	Take "snapshot" of the repository as it stands now with the commit command.
-	git commit -m "Add yourfile.php"
+	
+		git commit -m "Add yourfile.php"
 
 	Connect your local file with Github
-	git remote add origin https://github/username/repository.git
+	
+		git remote add origin https://github/username/repository.git
 
 	If you write wrong username, go to .git/config and change it in your computer.
 
 	Double check to make sure it knows
-	git remote -v
+
+		git remote -v
 
 	Upload
-	git push
+
+		git push
 
 	If you have an error when you use the "push" command then:
-	Error: failed to push
-	![rejected]    master->master(non-fast forward)
-	error: failed to push some ref to ......
-		Solution
-			git pull origin master
-		or
-			git fetch origin
-			git merge origin master
+		Error: failed to push
+		![rejected]    master->master(non-fast forward)
+		error: failed to push some ref to ......
+			Solution
+				git pull origin master
+			or
+				git fetch origin
+				git merge origin master
 	and make the "push" again.
